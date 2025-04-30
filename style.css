@@ -33,6 +33,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .logo-div {
     background-color: rgb(28, 27, 26);
