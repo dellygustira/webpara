@@ -64,8 +64,7 @@ iframe {
 /* about us */
 .about-div {        
     position: relative;
-    max-width: 1100px;
-    height:fitcontent;
+    max-width: 1100px;    
     margin: 0;    
 }
 
