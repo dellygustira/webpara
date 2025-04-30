@@ -29,8 +29,8 @@ html {
 
 /* index */
 .sect-index {
-    margin: auto;
-    display: flex;
+    margin: 0;
+    display: contents;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -56,6 +56,12 @@ html {
 iframe {
     width: 560px;
     height: 315px;
+}
+
+.info-div {
+    margin: 10;
+    width: 50%;
+    font-family: Verdana;
 }
 
 /* about us */
