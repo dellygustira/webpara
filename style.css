@@ -36,12 +36,9 @@ html {
     position: relative;
 }
 .logo-div {
-    background-color: rgb(28, 27, 26);
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    padding: 50px;
-    display: flex;
+    margin: 10;
+    padding: 10px;
+    display: block;
     align-items: center;
     justify-content: center
 }
