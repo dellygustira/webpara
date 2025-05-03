@@ -10,8 +10,16 @@ html {
     height: 10vh;
 }
 
+.ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+}
+
 .a-navbar {
     display: block;
+    list-style-type: none;
     justify-items: center;
     font-size: 13px;
     font-family: sans-serif;
@@ -29,32 +37,32 @@ html {
 }
 
 /* index */
-.sect-index {
+.container-div {
     margin: 0;
-    display:block; 
+    background-color: powderblue;
+    width: 100%;
+    height: max-content;
+    display: block;
+    writing-mode: horizontal-tb;
 }
 
-.container {
-    position: relative;        
-    width: 190px;
-    height: 200px;
-    left: 20px;
-}
-
-.logo {
-    position: absolute;    
+.logo-div {
+    background-color: yellowgreen;
     padding: 10px;
     top: 10px;
-    left: 10px;
-    width: 110px;
-    height: 110px;       
 }
 
 .video-div {
-    margin: auto;
-    padding: 10px;    
-    width: 560px;
+    background-color: blueviolet;
+    padding: 5px;
 }
+
+.trip-div {
+    width: 50%; 
+    border: solid 1px;
+    padding: 10px;
+}
+
 
 iframe {
     width: 560px;
@@ -65,32 +73,37 @@ iframe {
     border: solid 1px;
     padding: 10px;
     margin: 10px;
-    margin-left: 245px;
     width: 50%;
-    font-family: sans-serif;   
+    height: auto;
+    font-family: sans-serif;
 }
 
 /* about us */
-.about-div {        
+
+
+.about-div {
     position: relative;
     height: max-content;    
-    margin: 0;    
+    margin: 0;
+
 }
 
-.artikel {    
-    margin: 0;
+
+.artikel {
     position: absolute;
+    margin: 0;    
     top: 0;
-    height: 75%;
-    font-family: sans-serif;    
+    font-size: 13px;
+    height: 80%;    
+    font-family: sans-serif;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    padding: 20px;        
+    padding: 10px;
 }
 
 aside {
-    width: 60%;
+    width: 50%;
     border-radius: 5px;
     padding: 10px;
     margin-left: 10px;
@@ -99,7 +112,8 @@ aside {
     font-style: italic;
     font-family: sans-serif;
     color: white;
-    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1));
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+
 }
 
 /* program */
@@ -114,12 +128,12 @@ aside {
     flex-wrap: nowrap;
     height: 360px;
     margin: 0;
-    padding: 10px;    
+    padding: 10px;
 }
 
 .flex-container>div {
-    background-color: rgb(255,165,0);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        
+    background-color: rgb(255, 165, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 200px;
     height: 250px;
     margin: auto;
@@ -138,22 +152,27 @@ aside {
     margin-left: 20px;
 }
 
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+
+}
 .h1-footer {
     color: white;
     font-size: small;
-    font-family: verdana;
+    font-family: Arial;
 }
 
-.medsos-div {           
+.medsos-div {
     padding: 10px;
     font-family: Arial;
-    font-size: 13px;   
+    font-size: 13px;
 }
 
-.medsos-div> a {
-    display: contents;
+.medsos-div>a {
     text-align: center;
-    font-size: 20px;    
+    font-size: 20px;
 }
 
 .marki {
