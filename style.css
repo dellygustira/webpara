@@ -88,12 +88,11 @@ iframe {
 
 }
 
-
-.artikel {
+.artikel {   
     position: absolute;
     margin: 0;    
     top: 0;
-    
+    font-size: 13px;
     height: 80%;    
     font-family: sans-serif;
     background: rgb(0, 0, 0);
@@ -155,27 +154,30 @@ aside {
 /* footer */
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: left;  
+    background-color: blue;
+    column-gap: 230px;
 
 }
-.h1-footer {
-    color: white;
-    font-size: small;
-    font-family: Arial;
+
+.cr { 
+    padding: 10px;    ;
+    background-color: chocolate;
+    color: #fff;
+    justify-items: flex-start;
 }
 
 .medsos-div {
+    background-color: red;
     padding: 10px;
     font-family: Arial;
     font-size: 13px;
+   
+    
 }
 
-.medsos-div>a {
-    text-align: center;
+.medsos-div>a {    
+    text-align: left;
     font-size: 20px;
 }
 
-.marki {
-    background-color: black;
-    padding: 5px;
-}
