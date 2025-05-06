@@ -5,6 +5,8 @@ html {
 }
 
 .div-nav {
+    positioned: fixed;
+    top: 0;
     background-color: red;
     justify-items: center;
     height: 10vh;
