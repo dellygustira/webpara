@@ -6,8 +6,7 @@ html {
 
 .div-nav {
     position: fixed;
-    top: 0;
-    margin-top: 0;
+    top: 0;    
     width: 100%;
     background-color: red;
     justify-items: center;
@@ -43,7 +42,7 @@ html {
 /* index */
 .container-div:nth-of-type(1) {
     margin: 0;
-    margin-top: 50px;
+    margin-top: 55px;
     background-color: powderblue;
     width: 100%;
     height: max-content;
