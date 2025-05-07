@@ -94,7 +94,7 @@ iframe {
 }
 
 .artikel {   
-    position: absolute;    
+    position: relative;    
    
     height: 80%;    
     font-family: sans-serif;
