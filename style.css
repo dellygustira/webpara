@@ -87,7 +87,7 @@ iframe {
 /* about us */
 
 
-.about-div {
+.about-div:nth-of-type(1) {
     position: relative;
     height: max-content;    
     margin: 10%;
