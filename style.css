@@ -89,12 +89,12 @@ iframe {
     height: max-content;
     top: 50px
     margin: 10%;
-    margin-top: 60px;
+    margin-top: 55px;
 
 }
 
 .artikel {   
-    position: relative;    
+    position: static;    
    
     height: 80%;    
     font-family: sans-serif;
