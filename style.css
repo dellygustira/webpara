@@ -90,7 +90,8 @@ iframe {
 .about-div {
     position: relative;
     height: max-content;    
-    margin: 0;
+    margin: 10%;
+    margin-top: 50px;
 
 }
 
