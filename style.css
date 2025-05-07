@@ -85,7 +85,7 @@ iframe {
 
 /* about us */
 .about-div:nth-of-type(1) {
-    position: static;
+    position: absolute;
     height: max-content;
     top: 50px
     margin: 10%;
