@@ -1,91 +1,232 @@
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="delly" />
+    <meta
+      name="description"
+      content="Website Resmi Perkumpulan Alumni Red Ant (PARA)"
+    />
+    <title>WEB PARA - Perkumpulan Alumni Red Ant</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="delly">
-    <title> WEB PARA</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" />
-    <script src="https://kit.fontawesome.com/ddb8bed067.js" crossorigin="anonymous"></script>
-</head>
 
-<body>
-    <header>
-        <!-- NAVIGATION BAR -->
-        <div class="div-nav">
-            <nav>
-                <ul class="ul">
-                    <li><a href="index.html" class="a-navbar">HOME</a></li>
-                    <li><a href="about.html" class="a-navbar">ABOUT US</a></li>
-                    <li><a href="program.html" class="a-navbar">PROGRAM</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- NAVIGATION BAR SELESAI -->
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ddb8bed067.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <header class="navbar" id="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="logo" aria-label="PARA logo">
+          <img src="logo_para_small-removebg-preview.png" alt="PARA logo" />
+        </a>
+
+        <nav class="nav-menu" aria-label="Primary Navigation">
+          <ul class="ul">
+            <li><a href="#home" class="nav-link active">HOME</a></li>
+            <li><a href="#about" class="nav-link">ABOUT US</a></li>
+            <li><a href="#program" class="nav-link">PROGRAM</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <div class="container-div">
-        <div class="logo-div">
-            <a href="https://youtube.com/@paredant">
-                <img src="logo para poster A4.png" alt="LOGO-PARA" />
-            </a>
-            <article class="trip">
-                <h3>ALUMNI TRIP</h3>
-                <p>Jelajahin kawasan campsite pl seru bakalannya neh..secara udah tiga kali PAB Red Ant disana,
-                    secara penguasaan medan udah bisa punya insight lah..kalo diperluas dan diperdalam lagi
-                    penjelajahannya.</p>
-            </article>
+    <!-- HERO Section -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-image">
+          <img
+            src="ngasoh.jpg"
+            alt="beberapa alumni sedang berkumpul di atas bukit"
+          />
         </div>
 
-        <div class="video-div">
-            <iframe src="https://www.youtube.com/embed/uprqIjqUUms" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            <div class="home-section">
-                <h3>Heading</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
-                    id est laborum.</p>
-            </div>
+        <div class="hero-content">
+          <h1>Selamat Datang di Website Perkumpulan Alumni Red Ant</h1>
+          <p>
+            Mari bergabung dan kita berkumpul para alumni. Kami membangun
+            jejaring, mengembangkan pengalaman dan menciptakan dampak positif
+            bersama.
+          </p>
+          <a href="#about" class="btn-primary">Pelajari Lebih Lanjut</a>
+        </div>
+      </div>
+    </section>
 
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <h2>Tentang Kami</h2>
+      <div class="about-content">
+        <!-- Artikel 1 -->
+        <article class="artikel">
+          <h3>Latar Belakang</h3>
+          <p>
+            Pengenalan tentang kegiatan mendaki gunung, panjat dinding,
+            penelusuran goa dan lain sebagainya, di tingkat SMA diwadahi oleh
+            sekolah melalui kegiatan ekstrakulikuler siswa pencinta alam
+            (organisasi red-ant). Sebagai sarana aktualisasi dalam pengembangan
+            minat dan bakat, diisi dengan materi kelas berupa pengetahuan dasar
+            perihal kegiatan di alam terbuka.
+          </p>
+          <p>
+            Penanganan resiko dan kemungkinan bahaya yang ditimbulkan hingga
+            melatih fisik agar bugar, membuat perencanaan perjalanan hingga
+            melakukan proses pendakian dan berkegiatan.
+          </p>
+        </article>
+
+        <!-- Artikel 2 -->
+        <article class="artikel">
+          <p>
+            Pasca lulus dari SMA bagi yang melanjutkan ke perguruan tinggi dan
+            masih konsisten berkegiatan dibidang pecinta alam, maka memilih UKM
+            (Mapala) sebagai wadahnya. Organisasi kemahasiswaan di lingkungan
+            akademik seperti UKM, Senat atau BEM hingga ekstra kampus menjadi
+            sarana aktualisasi dalam aktivitas berorganisasi. Ruang lingkup dan
+            orientasi kegiatan di lingkungan akademik jauh lebih luas dan
+            mendalam, peningkatan kapasitas pengetahuan membuat perubahan pada
+            cara berpikir, belajar dan bersikap. Melihat permasalahan secara
+            empiris adalah bentuk intelektualitas, sedangkan pengabdian pada
+            ilmu pengetahuan dan masyarakat merupakan tanggung jawab moral atas
+            tri dharma perguruan tinggi.
+          </p>
+        </article>
+
+        <!-- Artikel 3 -->
+        <article class="artikel">
+          <p>
+            Berangkat dari kesadaran atas kondisi tersebut kami alumni sman 1
+            tambun selatan memiliki ide dan gagasan, dengan menghimpun diri
+            kedalam sebuah organisasi yang mengakomodir kegiatan pencinta alam
+            maupun kegiatan sosial.
+          </p>
+        </article>
+
+        <!-- Aside -->
+        <article class="artikel">
+          <aside>
+            <h3>Perkumpulan Alumni Sispala SMAN 1 Tambun Selatan</h3>
+            <p>Salam Rimba! Red Ant!</p>
+          </aside>
+        </article>
+
+        <!-- Artikel 4: Maksud dan Tujuan -->
+        <article class="artikel">
+          <h3>Maksud dan Tujuan</h3>
+          <p>
+            Alumni yang memiliki pengalaman berorganisasi pasca sekolah
+            khususnya di bidang pencinta alam, bersedia dengan sukarela
+            melakukan pendampingan dengan maksud mengajarkan sesuai dengan
+            kapasitas ilmu pengetahuan yang dimiliki. Berkolaborasi melalui
+            rangkaian program kerja, yang diajukan kepada pihak sekolah. Dengan
+            tujuan mendukung kualitas dan tumbuh kembangnya sispala red ant.
+          </p>
+        </article>
+
+        <!-- Artikel 5: Visi dan Misi -->
+        <article class="artikel">
+          <h3>Visi dan Misi</h3>
+          <p>
+            Visi organisasi yaitu menjadi wadah pengelolaan untuk pengembangan
+            hobi, minat dan bakat serta kegemaran di bidang pencinta alam yang
+            berkelanjutan.
+          </p>
+
+          <ol>
+            <li class="li-misi">
+              Mengakomodir inisiatif, gagasan dan semangat dalam berkegiatan
+              yang terencana dan terlaksana.
+            </li>
+            <li class="li-misi">
+              Menginventarisir kemampuan, kemahiran dan kegemaran untuk
+              perkembangan kreatifitas dan ilmu pengetahuan.
+            </li>
+            <li class="li-misi">
+              Menumbuhkan dan mewujudkan kolektifitas serta swadaya alumni (red
+              ant).
+            </li>
+            <li class="li-misi">
+              Memasyarakatkan pengetahuan tentang berkegiatan dialam bebas.
+            </li>
+            <li class="li-misi">
+              Meningkatkan kapasitas sumber daya manusia dibidang kegiatan
+              pencinta alam dan olahraga ekstrim.
+            </li>
+          </ol>
+        </article>
+
+        <!-- Artikel 6: Legalitas -->
+        <article class="artikel">
+          <h3>Legalitas</h3>
+          <p>
+            SK.MENTERI HUKUM DAN HAK ASASI MANUSIA RI
+            NO.AHU-0002292.AH.01.07.TAHUN 2023 TENTANG PENGESAHAN PENDIRIAN
+            PERKUMPULAN ALUMNI SISWA PENCINTA ALAM SMAN SATU TAMBUN SELATAN.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROGRAM SECTION -->
+    <section class="programs" id="program">
+      <h2>PROGRAM KAMI</h2>
+      <div class="program-grid">
+        <div class="program-card">
+          <h3>Training of Trainers</h3>
+          <p>
+            Sebuah kegiatan pembekalan bagi anggota red-ant yang akan persiapan
+            menjadi kepanitian PAB, dalam kapasitasnya sebagai seorang mentor
+            bagi calon anggota red-ant.
+          </p>
         </div>
 
-        <div class="info-div">
-            <img src="logora.jpg" alt="logo red ant" width="80%" height="80%">
-            <article>
-                <h3>PAB RED ANT 2025</h3>
-                <p>Waktu pelaksanaan PAB yang telah direncanakan sebelumnya pada tanggal 9-11 mei 2025, mengalami
-                    perubahan menjadi tanggal 22-24 mei 2025. Informasi tersebut dikonfirmasi oleh ketua pelaksana
-                    PAB
-                    2025, saat pengajuan proposal kegiatan PAB 2025 kepada pihak sekolah. Perubahan waktu disebabkan
-                    adanya
-                    kegiatan perkemahan bantara yang akan diikuti oleh seluruh siswa kelas 10 ditanggal 9-11 mei
-                    2025.
-                </p>
-            </article>
+        <div class="program-card">
+          <h3>Latihan Gabungan</h3>
+          <p>
+            Sebuah kegiatan latihan bersama antar sispala dari berbagai sekolah,
+            dengan beragam jenis bidang latihan yang diadakan, misalnya seperti
+            panjat dinding, materi kelas navigasi darat dan lain sebagainya.
+          </p>
         </div>
-    </div>
 
-    <footer>
-        <div class="medsos-div">FOLLOW US:
-            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" class="google"><i class="fa-brands fa-google"></i></a>
+        <div class="program-card">
+          <h3>Ultah Red Ant</h3>
+          <p>
+            Sebuah acara seremonial yang disi dengan berbagai kegiatan dengan
+            membuat tema tertentu, dengan konsep diskusi, pemutaran film dengan
+            menghadirkan narasumber dan diakhiri dengan santap makan bersama
+            para tamu undangan yang hadir.
+          </p>
         </div>
-        <div class="cr">
-            <p>@ 2025 dellz</p>
-        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="medsos-div">
+        FOLLOW US:
+        <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="x"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" class="google"><i class="fa-brands fa-google"></i></a>
+      </div>
+      <div class="cr">
+        <p>&copy; 2025 dellz</p>
+      </div>
     </footer>
 
-    <script src="data.js" />
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
