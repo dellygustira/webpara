@@ -31,7 +31,9 @@ window.addEventListener("scroll", () => {
   });
 });
 
-const reveals = document.querySelectorAll(".reveal");
+const reveals = document.querySelectorAll(
+  ".reveal, .reveal-left, .reveal-right, .reveal-zoom"
+);
 
 function revealOnScroll() {
   reveals.forEach((el) => {
