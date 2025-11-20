@@ -12,9 +12,11 @@ html {
   overflow-x: hidden;
 }
 
+/* Font utama website */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  line-height: 1.65;
+  font-weight: 400;
   color: #333;
   overflow-x: hidden;
 }
@@ -23,6 +25,50 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+/* ==========================
+   TYPOGRAPHY SYSTEM
+========================== */
+
+/* Heading scale modern (modular scale 1.25) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #2d3748; /* Dark gray modern */
+}
+
+/* Ukuran heading */
+h1 {
+  font-size: 2.75rem;
+} /* Hero title */
+h2 {
+  font-size: 2rem;
+} /* Section title */
+h3 {
+  font-size: 1.4rem;
+} /* Card and article title */
+h4 {
+  font-size: 1.2rem;
+}
+
+/* Paragraf */
+p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* List items */
+li {
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 /* ==================== */
@@ -62,7 +108,6 @@ body {
   backdrop-filter: blur(20px);
   padding-top: 5px;
 }
-
 
 .logo {
   display: flex;
@@ -149,7 +194,8 @@ body {
 }
 
 .hero-image img {
-  width: 100%;
+  max-width: 100%;
+  display: block;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 20px 60px rgba(102, 126, 234, 0.2); /* ✅ Purple shadow */
@@ -167,14 +213,14 @@ body {
 
 .hero-content h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #2d3748;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: #4a5568;
   margin-bottom: 30px;
   line-height: 1.8;
@@ -213,7 +259,8 @@ body {
 
 .about h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.2rem;
+  font-weight: 700;
   color: #667eea; /* ✅ Purple accent */
   margin-bottom: 60px;
 }
@@ -238,7 +285,7 @@ body {
 }
 
 .artikel h3 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #667eea; /* ✅ Purple accent */
   margin-bottom: 20px;
 }
@@ -284,7 +331,7 @@ body {
 }
 
 .artikel .li-misi::marker {
-  color: #667eea; /* ✅ Purple bullet points */
+  color: #667eea; 
   font-weight: bold;
 }
 
@@ -306,7 +353,7 @@ body {
 
 .programs h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.2rem;
   margin-bottom: 60px;
   color: white;
 }
@@ -345,15 +392,16 @@ body {
 }
 
 .program-card h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
   margin-bottom: 20px;
   color: #2d3748;
   text-align: center;
 }
 
 .program-card p {
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 1.05rem;
+  line-height: 1.65;
   color: #333;
 }
 
@@ -451,6 +499,31 @@ body {
   transform: translateY(0);
 }
 
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.9s ease;
+}
+
+.reveal-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ==================== */
+/*   UTILITY CLASSES    */
+/* ==================== */
+.text-purple {
+  color: #667eea;
+}
+
+.bg-purple {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.shadow-purple {
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
 
 /* ==================== */
 /*   MEDIA QUERIES      */
@@ -475,6 +548,21 @@ body {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+  }
+
   .navbar-container {
     height: 60px;
     padding: 0 20px;
@@ -499,27 +587,17 @@ body {
   }
 
   .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
+    font-size: 1.9rem;
   }
 
   .about h2,
   .programs h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
-  /* ✅ Mobile: 1 kolom, card ke-5 reset */
   .program-grid {
     grid-template-columns: 1fr;
     max-width: 500px;
-  }
-
-  .program-card:nth-child(5) {
-    grid-column: auto;
-    max-width: 100%;
   }
 
   .artikel {
@@ -562,19 +640,4 @@ body {
   .program-card {
     padding: 30px 20px;
   }
-}
-
-/* ==================== */
-/*   UTILITY CLASSES    */
-/* ==================== */
-.text-purple {
-  color: #667eea;
-}
-
-.bg-purple {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.shadow-purple {
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
 }
