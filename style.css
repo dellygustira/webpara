@@ -331,7 +331,7 @@ li {
 }
 
 .artikel .li-misi::marker {
-  color: #667eea; 
+  color: #667eea;
   font-weight: bold;
 }
 
@@ -403,6 +403,37 @@ li {
   font-size: 1.05rem;
   line-height: 1.65;
   color: #333;
+}
+
+/* ==================== */
+/*   CONTACT SECTION    */
+/* ==================== */
+.contact {
+  padding: 100px 30px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #667eea;
+  margin-bottom: 60px;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 /* ==================== */
