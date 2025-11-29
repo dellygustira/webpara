@@ -430,6 +430,9 @@ li {
 }
 
 .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   background: white;
   padding: 40px;
   border-radius: 15px;
@@ -445,7 +448,20 @@ li {
 .contact-info p {
   font-size: 1.1rem;
   margin: 15px 0;
-  color: #4a5568;
+    
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s;  
+}
+
+.contact-info a:hover {
+  color: #007bff; /* Warna saat hover */;
 }
 /* ==================== */
 /*       FOOTER         */
