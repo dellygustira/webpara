@@ -463,6 +463,14 @@ li {
 .contact-info a:hover {
   color: #007bff; /* Warna saat hover */;
 }
+
+.contact-info i {
+  font-size: 1.1rem;
+}
+
+.fa-whatsapp {
+  color: #25D366; /* Hijau WhatsApp */
+}
 /* ==================== */
 /*       FOOTER         */
 /* ==================== */
